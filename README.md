@@ -1,4 +1,4 @@
-# emart_app
+# Go-Local Delivery App
 
 A new Flutter project.
 
