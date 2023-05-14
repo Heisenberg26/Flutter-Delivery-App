@@ -1,4 +1,7 @@
 //icons
+const icona = "assets/icons/GLOCAL1.png";
+const iconb = "assets/icons/GLOCAL2.png";
+const icon1 = "assets/icons/logo.png";
 const icAdd = "assets/icons/add.png";
 const icAppLogo = "assets/icons/app_logo.png";
 const icAppleLogo = "assets/icons/apple_logo.png";
@@ -38,7 +41,8 @@ const icProfile = "assets/icons/profile.png";
 const icRefund = "assets/icons/refund.png";
 const icSearch = "assets/icons/search.png";
 const icShop = "assets/icons/shop.png";
-const icSplashBg = "assets/icons/splash_login_registration_background_image.png";
+const icSplashBg =
+    "assets/icons/splash_login_registration_background_image.png";
 const icSquareLogo = "assets/icons/square_logo.png";
 const icTodaysDeal = "assets/icons/todays_deal.png";
 const icTopCategories = "assets/icons/top_categories.png";
