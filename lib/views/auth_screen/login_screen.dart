@@ -1,7 +1,7 @@
 import 'package:emart_app/widgets_common/applogo_widget.dart';
 import 'package:emart_app/widgets_common/bg_widget.dart';
 import 'package:emart_app/widgets_common/custom_textfield.dart';
-
+import 'package:emart_app/widgets_common/our_button.dart';
 import '../../consts/consts.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -11,35 +11,52 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return bgWidget(
         child: Scaffold(
+            resizeToAvoidBottomInset: false,
             body: Center(
-      child: Column(
-        children: 
-        [
-          (context.screenHeight * 0.08).heightBox,
-          (Image.asset(iconb)
-              .box
-              // .white
-              .size(200, 103)
-              .padding(const EdgeInsets.all(0))
-              .rounded
-              .make()),
-              10.heightBox
-              ,
-          "Log in to App".text.fontFamily(regular).white.size(25).make(),
-         50.heightBox,
+              child: Column(
+                children: [
+                  (context.screenHeight * 0.08).heightBox,
+                  (Image.asset(iconb)
+                      .box
+                      // .white
+                      .size(200, 180)
+                      .padding(const EdgeInsets.all(0))
+                      .rounded
+                      .make()),
+                  10.heightBox,
+                  "Log in to App"
+                      .text
+                      .fontFamily(regular)
+                      .white
+                      .size(15)
+                      .make(),
+                  25.heightBox,
+                  Column(
+                    children: [
+                      customTextField(hint: emailHint, title: email),
+                      10.heightBox,
+                      customTextField(hint: passwordHint, title: password),
+                      Align(
+                          alignment: Alignment.centerRight,
+                          child: TextButton(
+                              onPressed: () {}, child: forgetPass.text.color(fav).make())),
+                              5.heightBox,
+                              ourButton(color: fav, title: login, textcolor: whiteColor, onPress: (){} ).box.width(context.screenWidth - 180).make(),
+                              10.heightBox,
+                              createNewAccount.text.color(fav).make(),
+                              10.heightBox,
+                              ourButton(color: fav, title: signup, textcolor: whiteColor, onPress: (){} ).box.width(context.screenWidth - 180).make(),
+                        
 
-          Column(
-            children: [
-               customTextField(hint: emailHint, title: email),
-              20.heightBox,
-               customTextField(hint: passwordHint, title: password),
-               TextButton(onPressed: (){
-
-               }, child: forgetPass.text.make())
-            ],
-          ).box.color(Vx.gray900).rounded.padding(const EdgeInsets.all(20)).width(context.screenWidth - 70).make()
-        ],
-      ),
-    )));
+                    ],
+                  ).box
+                      .color(Vx.gray900)
+                      .rounded
+                      .padding(const EdgeInsets.all(14))
+                      .width(context.screenWidth - 80)
+                      .make(),
+                ],
+              ),
+            )));
   }
 }

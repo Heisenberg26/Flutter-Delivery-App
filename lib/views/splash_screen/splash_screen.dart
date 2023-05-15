@@ -15,8 +15,8 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   changeScreen() {
-    Future.delayed(Duration(seconds: 3), () {
-      Get.to(() => LoginScreen());
+    Future.delayed(const Duration(seconds: 3), () {
+      Get.to(() => const LoginScreen());
     });
   }
 
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
             children: [
               Align(
                   alignment: Alignment.topLeft,
-                  child: Image.asset(icSplashBg, width: 200)),
+                  child: Image.asset(icSplashBg, width: 100)),
               20.heightBox,
               applogoWidget(),
               10.heightBox,

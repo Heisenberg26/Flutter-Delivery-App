@@ -8,5 +8,5 @@ const passwordHint = "********";
 const forgetPass = "Forgot Password";
 const login = "Log in";
 const signup = "Sign up";
-const createNewAccount = "or, create a new account";
+const createNewAccount = "Create a new account";
 const loginWith = "Log in with";
