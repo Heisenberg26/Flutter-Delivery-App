@@ -5,7 +5,7 @@ Widget customTextField({String? title, String? hint, controller}) {
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       title!.text.color(fav).fontFamily(semibold).size(18).make(),
-      25.heightBox,
+      13.heightBox,
       TextFormField(
         decoration: const InputDecoration(
           hintStyle: TextStyle(
