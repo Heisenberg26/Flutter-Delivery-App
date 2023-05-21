@@ -5,9 +5,17 @@ import '../../widgets_common/bg_widget.dart';
 import '../../widgets_common/custom_textfield.dart';
 import '../../widgets_common/our_button.dart';
 
-class SignupScreen extends StatelessWidget {
+class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
 
+  @override
+  State<SignupScreen> createState() => _SignupScreenState();
+}
+
+class _SignupScreenState extends State<SignupScreen> {
+
+  bool? isCheck = false;
+  
   @override
   Widget build(BuildContext context) {
     return bgWidget(

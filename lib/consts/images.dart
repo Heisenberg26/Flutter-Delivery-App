@@ -52,7 +52,9 @@ const icTwitterLogo = "assets/icons/twitter_logo.png";
 const icWallet = "assets/icons/wallet.png";
 const icWhiteTick = "assets/icons/white_tick.png";
 const icWholeSale = "assets/icons/wholesale.png";
-
+const icfood = "assets/icons/food.png";
+const iccar = "assets/icons/car.png";
+const icveg = "assets/icons/veg.png";
 //images
 const imgbg2 = "assets/icons/bg2.png";
 const imgBackground = "assets/icons/bg.png";

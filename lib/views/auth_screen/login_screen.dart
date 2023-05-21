@@ -1,5 +1,6 @@
 import 'package:emart_app/consts/lists.dart';
 import 'package:emart_app/views/auth_screen/signup_screen.dart';
+import 'package:emart_app/views/home_screen/home.dart';
 // ignore: unused_import
 import 'package:emart_app/widgets_common/applogo_widget.dart';
 import 'package:emart_app/widgets_common/bg_widget.dart';
@@ -47,13 +48,12 @@ class LoginScreen extends StatelessWidget {
                               child: forgetPass.text.color(fav).make())),
                       5.heightBox,
                       ourButton(
-                              color: fav,
-                              title: login,
-                              textcolor: whiteColor,
-                              onPress: () {})
-                          .box
-                          .width(context.screenWidth - 180)
-                          .make(),
+                          color: fav,
+                          title: login,
+                          textcolor: whiteColor,
+                          onPress: () {
+                            Get.to(() => Home());
+                          }).box.width(context.screenWidth - 180).make(),
                       10.heightBox,
                       createNewAccount.text.color(fav).make(),
                       10.heightBox,

@@ -14,3 +14,11 @@ const login = "Log in";
 const signup = "Sign up";
 const createNewAccount = "Create a new account";
 const loginWith = "or Log in with";
+
+//home strings
+
+const home = "Food",
+    categories = "Car Book",
+    grocery = "Grocery",
+    cart = "Cart",
+    account = "Account";
